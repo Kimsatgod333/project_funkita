@@ -1,0 +1,39 @@
+/* header */
+header {
+    background:#3a50a6;
+    padding:5px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+}
+header h1 {}
+header h1 a {}
+header h1 a img {}
+header nav {
+    display:flex;
+    align-items:center;
+}
+header nav ul {
+    display:flex;
+
+}
+header nav ul li {}
+header nav ul li a {}
+header nav ul li a .lnb {
+    display:none;
+}
+header nav #search {}
+header nav #search img {}
+header .info {
+    display:flex;
+}
+header .info li {}
+header .info li a {}
+header .info li a img {}
+footer {}
+footer .top {}
+footer .top .corp {}
+footer .top .policy {}
+footer .top .co_icon {}
+footer .bottom {}
