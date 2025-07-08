@@ -11,42 +11,42 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./scripts/db.js"></script>
-    <script src="./scripts/swiper.js"></script>
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/db.js" defer></script>
+    <script src="./scripts/main.js" defer></script>   
+    <script src="./scripts/swiper.js" defer></script>
 </head>
 <body>
     <header>
-        <h1><a href="#"><img src="./images/FUNKY TRUNKS.png" alt="메인페이지로 돌아가기"></a></h1>
+        <h1><a href="#"><img src="./images/funkytrunks.png" alt="메인페이지로 돌아가기"></a></h1>
         <nav>
             <ul>
                 <li>
                     <a href="#">Man</a>
-                    <ul class="man_lnb"></ul>
+                    <ul class="lnb man_lnb"></ul>
                 </li>
                 <li>
                     <a href="#">Woman</a>
-                    <ul class="woman_lnb"></ul>
+                    <ul class="lnb woman_lnb"></ul>
                 </li>
                 <li><a href="#">Toddlers</a></li>
                 <li>
                     <a href="#">Collection</a>
-                    <ul class="collection_lnb"></ul>
+                    <ul class="lnb collection_lnb"></ul>
                 </li>
                 <li>Support</li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">About</a></li>
                 <li>
                     <a href="#">Sale</a>
-                    <ul class="sale_lnb"></ul>
+                    <ul class="lnb sale_lnb"></ul>
                 </li>
             </ul>
-            <button type="button" id="search"><img src="#" alt="검색하기"></button>
+            <button type="button" id="search"><img src="./images/search.png" alt="검색하기"></button>
         </nav>
         <ul class="info">
-            <li class="account"><a href="#"><img src="#" alt="계정 정보"></a></li>
-            <li class="cart"><a href="#"><img src="#" alt="장바구니"></a></li>
-            <li class="menu"><a href="#"><img src="#" alt="메뉴"></a></li>
+            <li class="account"><a href="#"><img src="./images/icons/icon001.png" alt="계정 정보"></a></li>
+            <li class="cart"><a href="#"><img src="./images/icons/icon002.png" alt="장바구니"></a></li>
+            <li class="menu"><a href="#"><img src="./images/icons/icon003.png" alt="메뉴"></a></li>
         </ul>
     </header>
     <main>
@@ -55,78 +55,20 @@
                 <div class="swiper-slide slide1">slide1</div>
                 <div class="swiper-slide slide2">slide2</div>
                 <div class="swiper-slide slide3">slide3</div>
+                <div class="swiper-slide slide4">slide4</div>
             </div>
         </div>
         <section id="new_arrival">
             <h2>new arrival - 신제품</h2>
             <div class="new_list">
                 <ul class="cate_btn">
-                    <li>woman</li>
-                    <li>man</li>
-                    <li>girls</li>
-                    <li>boys</li>
-                    <li>goggles</li>
-                    <li>caps</li>
-                    <li>gear</li>
-                </ul>
-                <div class="swiper new_swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide slide1">slide1</div>
-                        <div class="swiper-slide slide2">slide2</div>
-                        <div class="swiper-slide slide3">slide3</div>
-                        <div class="swiper-slide slide4">slide4</div>
-                        <div class="swiper-slide slide5">slide5</div>
-                        <div class="swiper-slide slide6">slide6</div>
-                        <div class="swiper-slide slide7">slide7</div>
-                        <div class="swiper-slide slide8">slide8</div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="weekly_best">
-            <h2>weekly best - 주간 베스트 상품</h2>
-            <div class="week_list">
-                <ul class="cate_btn">
-                    <li>woman</li>
-                    <li>man</li>
-                    <li>girls</li>
-                    <li>boys</li>
-                    <li>goggles</li>
-                    <li>caps</li>
-                    <li>gear</li>
-                </ul>
-                <div class="swiper new_swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide slide1">slide1</div>
-                        <div class="swiper-slide slide2">slide2</div>
-                        <div class="swiper-slide slide3">slide3</div>
-                        <div class="swiper-slide slide4">slide4</div>
-                        <div class="swiper-slide slide5">slide5</div>
-                        <div class="swiper-slide slide6">slide6</div>
-                        <div class="swiper-slide slide7">slide7</div>
-                        <div class="swiper-slide slide8">slide8</div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="middle_bnr">
-            <a href="#"><img src="#" alt="서포트 신청하기"></a>
-        </div>
-        <section id="trand">
-            <h2>funkita's trandy style - 펑키타 최신 트렌드 상품 추천</h2>
-            <div class="trand_list">
-                <ul class="cate_btn">
-                    <li>woman</li>
-                    <li>man</li>
-                    <li>girls</li>
-                    <li>boys</li>
-                    <li>goggles</li>
-                    <li>caps</li>
-                    <li>gear</li>
+                    <li><a href="#">woman</a></li>
+                    <li><a href="#">man</a></li>
+                    <li><a href="#">girls</a></li>
+                    <li><a href="#">boys</a></li>
+                    <li><a href="#">goggles</a></li>
+                    <li><a href="#">caps</a></li>
+                    <li><a href="#">gear</a></li>
                 </ul>
                 <div class="swiper new_swiper">
                     <div class="swiper-wrapper">
@@ -139,24 +81,75 @@
                         <div class="swiper-slide slide7">slide7</div>
                         <div class="swiper-slide slide8">slide8</div>
                         <div class="swiper-slide slide9">slide9</div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section id="weekly_best">
+            <h2>weekly best - 주간 베스트 상품</h2>
+            <div class="week_list">
+                <ul class="cate_btn">
+                    <li><a href="#">woman</a></li>
+                    <li><a href="#">man</a></li>
+                    <li><a href="#">girls</a></li>
+                    <li><a href="#">boys</a></li>
+                    <li><a href="#">goggles</a></li>
+                    <li><a href="#">caps</a></li>
+                    <li><a href="#">gear</a></li>
+                </ul>
+                <div class="swiper week_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">slide1</div>
+                        <div class="swiper-slide slide2">slide2</div>
+                        <div class="swiper-slide slide3">slide3</div>
+                        <div class="swiper-slide slide4">slide4</div>
+                        <div class="swiper-slide slide5">slide5</div>
+                        <div class="swiper-slide slide6">slide6</div>
+                        <div class="swiper-slide slide7">slide7</div>
+                        <div class="swiper-slide slide8">slide8</div>
+                        <div class="swiper-slide slide9">slide9</div>
+                        <div class="swiper-slide slide10">slide10</div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <div class="middle_bnr">
+            <a href="#"><img src="#" alt="서포트 신청하기"></a>
+        </div>
+        <section id="trand">
+            <h2>funkita's trandy style - 펑키타 최신 트렌드 상품 추천</h2>
+            <div class="trand_list">
+                <div class="swiper trand_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">slide1</div>
+                        <div class="swiper-slide slide2">slide2</div>
+                        <div class="swiper-slide slide3">slide3</div>
+                        <div class="swiper-slide slide4">slide4</div>
+                        <div class="swiper-slide slide5">slide5</div>
+                        <div class="swiper-slide slide6">slide6</div>
+                        <div class="swiper-slide slide7">slide7</div>
+                        <div class="swiper-slide slide8">slide8</div>
+                        <div class="swiper-slide slide9">slide9</div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
         <section id="news">
-            <h2>funky trunks news</h2>
+            <div class="title_wrap">
+                <h2>funky trunks news</h2>
+                <a href="#">더보기</a>
+            </div>
             <div class="news_list">
                 <ul>
-                    <li>
-                        <a href="#">
-                            <img src="#" alt="#">
-                            <span class="date"></span>
-                            <span class="title"></span>
-                        </a>
-                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                 </ul>
             </div>
         </section>
@@ -167,21 +160,21 @@
         <section id="help">
             <div class="email">
                 <div class="icon_title_wrap">
-                    <p><img src="#" alt="#"></p>
+                    <p><img src="./images/icons/icon004.png" alt="#"></p>
                     <h3>e-mail</h3>
                 </div>
                 <p>help@funkitrunks-korea.com</p>
             </div>
             <div class="notice">
                 <div class="icon_title_wrap">
-                    <p><img src="#" alt="#"></p>
-                    <h3>상품문의게시판</h3>
+                    <p><img src="./images/icons/icon005.png" alt="#"></p>
+                    <h3><a href="#">상품문의게시판</a></h3>
                 </div>
                 <p>위 게시판을 클릭하여 문의를 남겨주세요</p>
             </div>
             <div class="call">
                 <div class="icon_title_wrap">
-                    <p><img src="#" alt="#"></p>
+                    <p><img src="./images/icons/icon006.png" alt="#"></p>
                     <h3>call center</h3>
                 </div>
                 <p>전화 상담 : 1600 - 7078</p>
@@ -197,20 +190,56 @@
     </main>
     <footer>
         <div class="top">
-            <div class="corp"></div>
-            <div class="policy"></div>
-            <div class="co_icon"></div>
+            <div class="left">
+                <div class="corp">
+                    <p>ⓒ 2014 FUNKITRUNKS - KOREA</p>
+                </div>
+                <div class="policy">
+                    <a href="#">개인정보 보호 정책</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">제휴 / 대리점</a>
+                    <a href="#">주문조회 / 택배조회</a>
+                    <a href="#">Map</a>
+                    <a href="#">Bank Account</a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="insta">
+                    <a href="#">INSTAGRAMFEED - @FUNKITA_KR</a>
+                    <a href="#">INSTAGRAMFEED - @FUNKITRUNKS_KR</a>
+                </div>
+                <div class="co_icon">
+                    <img src="./images/corp_logo.png" alt="">
+                </div>
+            </div>
         </div>
         <div class="bottom">
-            <div class="co_name"></div>
-            <div class="co_owner"></div>
-            <div class="license"></div>
-            <div class="mail"></div>
-            <div class="mobile"><a href="#">모바일 버전으로 보기</a></div>
-            <div class="kg"><img src="#" alt="#"></div>
-            <div class="address"></div>
-            <p></p>
-            <p></p>
+            <div class="first_floor">
+                <div class="co_name">
+                    <span>FUNKITA KOREA</span>
+                    <span>FUNKITRUNKS KOREA</span>
+                </div>
+                <div class="co_owner">
+                    <span>OWNER</span>
+                    <span>KWON DAEYUL</span>
+                </div>
+                <div class="license">
+                    <span>BUSINESS LICENSE</span>
+                    <span>305 - 33 - 46118</span>
+                </div>
+                <div class="mail">
+                    <span>Mail-Order License</span>
+                    <span>2014 - DAEJEON JUNGGU - 0248</span>
+                </div>
+                <div class="mobile"><a href="#">모바일 버전으로 보기</a></div>
+                <div class="kg"><img src="./images/kg.png" alt="kg인증"></div>
+            </div>
+            <div class="address">
+                <span>ADDRESS</span>
+                <span>4TH FLOOR, 294, JIJOK - RO, YUSEONG - GU, DAEJEON, KOREA</span>
+            </div>
+            <p>OFFICIAL ON-LINE STORE FUNKITA KOREA.</p>
+            <p>COPYRIGHT (C)FUNKITA KOREA RIGHT RESERVED.<br>본 저작권은 펑키타 코리아에 있으며, 상업적 이용 시 민.형사상 책임을 지게 됩니다.<br>콘텐츠 이용 시 출처를 밝히고(펑키타 코리아 및 www.funkita-korea.com 링크포함 필수) 비상업적인 용도에서만 활용하실 수 있습니다.</p>
         </div>
     </footer>
 </body>

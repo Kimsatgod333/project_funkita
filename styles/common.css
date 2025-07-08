@@ -1,11 +1,13 @@
 /* header */
 header {
+    width:100%;
     background:#3a50a6;
     padding:5px 40px;
     display:flex;
     justify-content:space-between;
     align-items:center;
     position:fixed;
+    z-index:999;
 }
 header h1 {}
 header h1 a {}
@@ -16,24 +18,140 @@ header nav {
 }
 header nav ul {
     display:flex;
-
+    gap:70px;
 }
-header nav ul li {}
-header nav ul li a {}
-header nav ul li a .lnb {
+header nav ul li {
+    color:#fff;
+}
+header nav ul li a {
+    color:#fff;
+}
+header nav ul li .lnb {
     display:none;
 }
-header nav #search {}
+header nav #search {
+    margin-left:30px;
+}
 header nav #search img {}
 header .info {
     display:flex;
+    gap:30px;
 }
 header .info li {}
 header .info li a {}
 header .info li a img {}
-footer {}
-footer .top {}
-footer .top .corp {}
-footer .top .policy {}
-footer .top .co_icon {}
+/* main */
+main {
+    padding-top:36px;
+}
+/* footer */
+footer {
+    background:#1e1e1e;
+    padding:30px 240px 100px;
+}
+footer * {
+    color:#fff;
+}
+footer .top {
+    display:flex;
+    padding:30px 0;
+    border-bottom:1px solid #fff;
+    margin-bottom:30px;
+}
+footer .top .left {
+    display:flex;
+    flex-flow:column nowrap;
+    margin-right:50px;
+}
+footer .top .left .corp {
+    margin-bottom:20px;
+}
+footer .top .left .corp p {}
+footer .top .left .policy {
+    display:flex;
+    flex-flow:column nowrap;
+}
+footer .top .left .policy a {
+    font-size:0.875rem;
+    margin-bottom:5px;
+}
+footer .top .left .policy a:last-child {
+    margin-bottom:0;
+}
+footer .top .right {
+    display:flex;
+    flex-flow:column nowrap;
+}
+footer .top .right .insta {
+    margin-bottom:50px;
+    display:flex;
+    flex-flow:column nowrap;
+}
+footer .top .right .insta a {
+    font-size:0.875rem;
+}
+footer .top .right .insta a:first-child {
+    margin-bottom:3px;
+}
+footer .top .right .co_icon {}
+footer .top .right .co_icon img {}
 footer .bottom {}
+footer .bottom .first_floor {
+    display:flex;
+    gap:40px;
+}
+footer .bottom .first_floor .co_name {}
+footer .bottom .first_floor .co_name span {
+    font-size:0.75rem;
+}
+footer .bottom .first_floor .co_name span:last-child {
+    color:#777;
+    margin-left:15px;
+}
+footer .bottom .first_floor .co_owner {}
+footer .bottom .first_floor .co_owner span {
+    font-size:0.75rem;
+}
+footer .bottom .first_floor .co_owner span:last-child {
+    color:#777;
+    margin-left:15px;
+}
+footer .bottom .first_floor .license {}
+footer .bottom .first_floor .license span {
+    font-size:0.75rem;
+}
+footer .bottom .first_floor .license span:last-child {
+    color:#777;
+    margin-left:15px;
+}
+footer .bottom .first_floor .mail {}
+footer .bottom .first_floor .mail span {
+    font-size:0.75rem;
+}
+footer .bottom .first_floor .mail span:last-child {
+    color:#777;
+    margin-left:15px;
+}
+footer .bottom .first_floor .mobile {}
+footer .bottom .first_floor .mobile a {
+    font-size:0.625rem;
+}
+footer .bottom .first_floor .kg {}
+footer .bottom .first_floor .kg img {}
+footer .bottom .address {
+    margin-bottom:10px;
+}
+footer .bottom .address span {
+    font-size:0.75rem;
+}
+footer .bottom .address span:last-child {
+    color:#777;
+    margin-left:15px;
+}
+footer .bottom > p {
+    font-size:0.75rem;
+}
+footer .bottom > p:last-child {
+    line-height:1.5;
+    margin-top:10px;
+}
