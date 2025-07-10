@@ -37,24 +37,25 @@ main #new_arrival .new_list .cate_btn li {}
 main #new_arrival .new_list .cate_btn li a {}
 main #new_arrival .new_swiper {
     width:980px;
-    height:314px;
 }
 main #new_arrival .new_swiper .swiper-wrapper {}
-main #new_arrival .new_swiper .swiper-wrapper .swiper-slide {
-    width:200px;
+main #new_arrival .new_swiper .swiper-wrapper .swiper-slide {}
+main #new_arrival .new_swiper .swiper-wrapper .swiper-slide a {
+    display:flex;
+    flex-flow:column;
+    gap:5px;
+    align-items:center;
 }
-main #new_arrival .new_swiper .swiper-wrapper .slide1 {
-    background:cyan;
-}
-main #new_arrival .new_swiper .swiper-wrapper .slide2 {
-    background:yellow;
-}
-main #new_arrival .new_swiper .swiper-wrapper .slide3 {
-    background:cyan;
-}
-main #new_arrival .new_swiper .swiper-wrapper .slide4 {
-    background:yellow;
-}
+main #new_arrival .new_swiper .swiper-wrapper .swiper-slide a img {}
+main #new_arrival .new_swiper .swiper-wrapper .swiper-slide a span {}
+main #new_arrival .new_swiper .swiper-wrapper .swiper-slide a .gender {font-size:0.875rem;}
+main #new_arrival .new_swiper .swiper-wrapper .swiper-slide a .name {}
+main #new_arrival .new_swiper .swiper-wrapper .swiper-slide a .kind {}
+main #new_arrival .new_swiper .swiper-wrapper .swiper-slide a .price {font-size:0.75rem;}
+main #new_arrival .new_swiper .swiper-wrapper .slide1 {}
+main #new_arrival .new_swiper .swiper-wrapper .slide2 {}
+main #new_arrival .new_swiper .swiper-wrapper .slide3 {}
+main #new_arrival .new_swiper .swiper-wrapper .slide4 {}
 main #new_arrival .new_swiper .swiper-wrapper .slide5 {}
 main #new_arrival .new_swiper .swiper-wrapper .slide6 {}
 main #new_arrival .new_swiper .swiper-wrapper .slide7 {}
@@ -91,7 +92,22 @@ main #weekly_best .week_list .week_swiper {}
 main #weekly_best .week_list .week_swiper .swiper-wrapper {}
 main #weekly_best .week_list .week_swiper .swiper-wrapper .swiper-slide {
     height:594px;
-    background:aqua;
+}
+main #weekly_best .week_list .week_swiper .swiper-wrapper .swiper-slide a {
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+    gap:5px;
+}
+main #weekly_best .week_list .week_swiper .swiper-wrapper .swiper-slide a img {}
+main #weekly_best .week_list .week_swiper .swiper-wrapper .swiper-slide a span {
+    font-size:0.875rem;
+}
+main #weekly_best .week_list .week_swiper .swiper-wrapper .swiper-slide a .gender {}
+main #weekly_best .week_list .week_swiper .swiper-wrapper .swiper-slide a .name {}
+main #weekly_best .week_list .week_swiper .swiper-wrapper .swiper-slide a .kind {}
+main #weekly_best .week_list .week_swiper .swiper-wrapper .swiper-slide a .price {
+    font-size:0.75rem;
 }
 main #weekly_best .week_list .week_swiper .swiper-wrapper .slide1 {}
 main #weekly_best .week_list .week_swiper .swiper-wrapper .slide2 {}
@@ -134,7 +150,14 @@ main #trand .trand_list .trand_swiper {
 main #trand .trand_list .trand_swiper .swiper-wrapper {}
 main #trand .trand_list .trand_swiper .swiper-wrapper .swiper-slide {
     height:700px;
-    background-color:lime;
+    position:relative
+}
+main #trand .trand_list .trand_swiper .swiper-wrapper .swiper-slide img {}
+main #trand .trand_list .trand_swiper .swiper-wrapper .swiper-slide span {
+    color:#fff;
+    position:absolute;
+    left:35px; bottom:35px;
+    font-size:1.75rem;
 }
 main #trand .trand_list .trand_swiper .swiper-wrapper .slide1 {}
 main #trand .trand_list .trand_swiper .swiper-wrapper .slide2 {}
@@ -275,6 +298,7 @@ main #help .call .open_time p:nth-child(3) {
     font-size:1.125rem;
     text-transform:uppercase;
 }
+a {cursor: pointer;}
 /* 카테고리 활성화 css */
 .active {
     font-weight:700;

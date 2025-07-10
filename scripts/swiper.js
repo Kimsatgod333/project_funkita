@@ -1,5 +1,6 @@
 const bnrSwiper = new Swiper('.bnr_swiper', { 
     autoplay:{delay:3000},
+    effect:'fade',
     loop:true,
 })
 const newSwiper = new Swiper('.new_swiper', { 

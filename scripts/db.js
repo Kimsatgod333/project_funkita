@@ -1,3 +1,10 @@
+const topBnr = [
+    './images/top_bnr/top_bnr001.png',
+    './images/top_bnr/top_bnr002.png',
+    './images/top_bnr/top_bnr001.png',
+    './images/top_bnr/top_bnr002.png',
+]
+console.log(topBnr)
 const newArrivalsWoman = [
     {
         src:'./images/new/new001.png',
@@ -127,6 +134,13 @@ const weekBestWoman = [
         kind:'다이아몬드 원피스',
         price:82000,
     },
+    {
+        src:'./images/week/week005.png',
+        gender:'woman',
+        name:'sitting duck',
+        kind:'다이아몬드 원피스',
+        price:82000,
+    },
 ]
 const trand = [
     {
@@ -178,6 +192,6 @@ const news = [
     },{
         src:'./images/fun_news/fun_news003.png',
         date:'2025.06.14',
-        title:'역대 14세 100m 선수중 가장 빠른 기록 달성하였던 제이콥 휘틀,충격 근황 밝혀져'
+        title:'역대 14세 100m 선수중 가장 빠른 기록 달성하였던 제이콥 휘틀, 충격 근황 밝혀져'
     },
 ]
