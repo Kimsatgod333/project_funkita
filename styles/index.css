@@ -129,7 +129,9 @@ main .middle_bnr {
     margin-top:120px;
 }
 main .middle_bnr a {}
-main .middle_bnr a img {}
+main .middle_bnr a img {
+    width:100%;
+}
 main #trand {
     padding:120px 0;
     display:flex;
