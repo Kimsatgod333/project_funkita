@@ -1,16 +1,16 @@
 main {}
 main .swiper {}
-main .bnr_swiper {}
-main .bnr_swiper .swiper-wrapper {}
-main .bnr_swiper .swiper-wrapper .swiper-slide {
-    width:200px;
+main .bnr_swiper {
     height:calc(100vh - 36px);
 }
-main .bnr_swiper .swiper-wrapper .slide1 {
-    background-color:aqua;
+main .bnr_swiper .swiper-wrapper {}
+main .bnr_swiper .swiper-wrapper .swiper-slide {}
+main .bnr_swiper .swiper-wrapper .swiper-slide img {
+    width:100%;
 }
-main .bnr_swiper .swiper-wrapper .slide2 {background-color:red;}
-main .bnr_swiper .swiper-wrapper .slide3 {background-color:cyan;}
+main .bnr_swiper .swiper-wrapper .slide1 {}
+main .bnr_swiper .swiper-wrapper .slide2 {}
+main .bnr_swiper .swiper-wrapper .slide3 {}
 main .bnr_swiper .swiper-wrapper .slide4 {}
 main section {
     padding:120px 240px;
@@ -36,7 +36,8 @@ main #new_arrival .new_list .cate_btn {
 main #new_arrival .new_list .cate_btn li {}
 main #new_arrival .new_list .cate_btn li a {}
 main #new_arrival .new_swiper {
-    width:980px;
+    max-width:980px;
+    min-width:320px;
 }
 main #new_arrival .new_swiper .swiper-wrapper {}
 main #new_arrival .new_swiper .swiper-wrapper .swiper-slide {}
@@ -304,4 +305,13 @@ a {cursor: pointer;}
 /* 카테고리 활성화 css */
 .active {
     font-weight:700;
+}
+/* 반응형 */
+@media screen and (max-width:1240px) {
+    main .bnr_swiper {
+        height:300px;
+    }
+}
+@media screen and (max-width:720px) {
+    
 }

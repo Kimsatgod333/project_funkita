@@ -1,0 +1,76 @@
+main {
+    max-width:1920px;
+    min-width:320px;
+    padding:150px 240px;
+}
+main .wrap {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+main .wrap h1 {
+    margin-bottom:120px;
+}
+main .wrap h1 a {}
+main .wrap h1 a img {
+    filter:invert(100%);
+    width:220px;
+}
+main .wrap form {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    margin-bottom:80px;
+}
+main .wrap form input {
+    border:2px solid #000;
+    border-radius:3px;
+    width:320px;
+    padding:10px;
+}
+main .wrap form #user_id {
+    margin-bottom:15px;
+}
+main .wrap form #user_pw {}
+main .wrap form #login {
+    background-color:#3a50a6;
+    margin:40px 0 20px;
+    width:320px;
+    border-radius:3px;
+    padding:10px;
+    color:#fff;
+}
+main .wrap form #google {
+    border:1px solid #000;
+    border-radius:25px;
+    display:flex;
+    padding:10px;
+    width:320px;
+    justify-content:center;
+    align-items:center;
+}
+main .wrap form #google span {
+    margin-right:15px;
+}
+main .wrap form #google img {
+    width:24px;
+}
+main .wrap .join {
+    width:max-content;
+}
+main .wrap .join a {}
+main .wrap .join a:first-child::after {
+    display:inline-block;
+    content:'|';
+    margin:0 15px;
+}
+@media screen and (max-width:1240px) {
+    main {
+        padding:150px 30px;
+    }
+}
+@media screen and (max-width:720px) {
+    main {
+        padding:150px 15px;
+    }
+}

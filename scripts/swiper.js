@@ -4,12 +4,19 @@ const bnrSwiper = new Swiper('.bnr_swiper', {
     loop:true,
 })
 const newSwiper = new Swiper('.new_swiper', { 
-    slidesPerView:4,
     spaceBetween:60,
     navigation:{
         prevEl:'.new_swiper + .swiper-button-prev',
         nextEl:'.new_swiper ~ .swiper-button-next',
     },
+    breakpoints:{
+        320:{
+            slidesPerView:2,
+        },
+        721:{
+            slidesPerView:4,
+        },
+    }
 })
 const weekSwiper = new Swiper('.week_swiper', { 
     slidesPerView:5,

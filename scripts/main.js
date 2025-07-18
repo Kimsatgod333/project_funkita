@@ -76,3 +76,23 @@ for(let i = 0 ; i < 7 ; i++){
         cateBtn[1].children[i].children[0].classList.add('active')
     })
 }
+const nav = document.querySelectorAll('nav > ul > li')
+const lnb = document.querySelectorAll('li > .lnb, li .lnb_wrap');
+const lnbFunc = (ind1, ind2)=>{
+    nav[ind1].addEventListener('mouseover', ()=>{
+        lnb[ind2].style.transform = 'scaleY(1)'
+    })
+    nav[ind1].addEventListener('mouseout', ()=>{
+        lnb[ind2].style.transform = 'scaleY(0)'
+    })
+}
+lnbFunc(0, 0)
+lnbFunc(1, 1)
+lnbFunc(3, 2)
+lnbFunc(7, 3)
+const account = document.querySelector('.account');
+account.addEventListener('click', ()=>{
+    window.location.href = './login.html'
+})
+const search = document.querySelector('#search')
+console.log(search)
