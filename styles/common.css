@@ -77,6 +77,9 @@ header .info {
 header .info li {}
 header .info li a {}
 header .info li a img {}
+header .info li .search_info {
+    display:none;
+}
 /* main */
 main {
     padding-top:36px;
@@ -171,13 +174,11 @@ footer .bottom .first_floor .mail span:last-child {
     color:#777;
     margin-left:15px;
 }
-footer .bottom .first_floor .mobile {}
-footer .bottom .first_floor .mobile a {
-    font-size:0.625rem;
-}
 footer .bottom .first_floor .kg {}
 footer .bottom .first_floor .kg img {}
 footer .bottom .address {
+    display:flex;
+    gap:15px;
     margin-bottom:10px;
 }
 footer .bottom .address span {
@@ -185,7 +186,6 @@ footer .bottom .address span {
 }
 footer .bottom .address span:last-child {
     color:#777;
-    margin-left:15px;
 }
 footer .bottom > p {
     font-size:0.75rem;
@@ -195,8 +195,74 @@ footer .bottom > p:last-child {
     margin-top:10px;
 }
 @media screen and (max-width:1240px) {
-    
+    main {
+        padding:120px 30px;
+    }
+    header nav {
+        display:none;
+    }
+    header .search_info {
+        display:block;
+    }
+    footer {
+        padding:120px 30px;
+    }
+    footer * {
+        text-wrap:nowrap;
+    }
+    footer .bottom .first_floor {
+        flex-flow:row wrap;
+    }
+    iframe {
+        width:800px;
+        height:600px;
+    }
 }
-@media screen and (max-width:720px) {
-    
+@media screen and (max-width:768px) {
+    header {
+        padding:5px 15px;
+    }
+    header h1 a img {
+        width:103px;
+    }
+    .info {
+        gap:20px;
+    }
+    .info li img {
+        width:18px;
+    }
+    main {
+        padding:80px 15px;
+    }
+    footer {
+        padding:80px 15px;
+    }
+    footer .top {
+        flex-flow:row wrap;
+        margin-bottom:10px;
+        gap:10px;
+    }
+    footer .co_icon img {
+        width:120px;
+    }
+    footer .kg {
+        margin-bottom:15px;
+    }
+    footer .address {
+        flex-flow:column;
+        gap:5px;
+    }
+    footer .insta {
+        margin-top:5px;
+    }
+    footer .bottom .first_floor {
+        gap:10px;
+    }
+    footer .bottom > p {
+        text-wrap:wrap;
+    }
+    iframe {
+        width:400px;
+        height:200px;
+    }
 }

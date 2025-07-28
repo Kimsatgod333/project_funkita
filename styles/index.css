@@ -309,9 +309,9 @@ a {cursor: pointer;}
 /* 반응형 */
 @media screen and (max-width:1240px) {
     main .bnr_swiper {
-        height:300px;
+        height:max-content;
     }
 }
-@media screen and (max-width:720px) {
+@media screen and (max-width:768px) {
     
 }

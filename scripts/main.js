@@ -1,5 +1,6 @@
 const aAll = document.querySelectorAll('a')
-for(i = 0 ; i < 37 ; i++){
+console.log(aAll)
+for(i = 0 ; i < 36 ; i++){
     aAll[i].addEventListener('click',(e)=>{
         e.preventDefault()
     })
