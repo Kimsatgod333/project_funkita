@@ -1,10 +1,3 @@
-const aAll = document.querySelectorAll('a')
-console.log(aAll)
-for(i = 0 ; i < 36 ; i++){
-    aAll[i].addEventListener('click',(e)=>{
-        e.preventDefault()
-    })
-}
 const bnrLocate = document.querySelectorAll('.bnr_swiper .swiper-slide')
 for(let i = 0 ; i < 4 ; i++){
     const bnrLink = document.createElement('a')
@@ -97,3 +90,25 @@ account.addEventListener('click', ()=>{
 })
 const search = document.querySelector('#search')
 console.log(search)
+//모바일 카테고리
+let deg = 180
+const mobileCate = document.querySelectorAll('.mobile_cate_btn');
+const mobileCatebtn = document.querySelectorAll('.mobile_cate > a');
+const cateArrow = document.querySelectorAll('.mobile_cate a img');
+console.log(mobileCate, mobileCatebtn, cateArrow)
+for(let i = 0 ; i < 2 ; i++){
+    const cateFunc = (ind)=>{
+        mobileCatebtn[ind].addEventListener('click',()=>{
+            if(deg == 180){
+                deg = 0
+                cateArrow[ind].style.transform = `rotate(${deg}deg)`
+                mobileCate[ind].style.transform = 'scaleY(1)'
+            }else {
+                deg = 180
+                cateArrow[ind].style.transform = `rotate(${deg}deg)`
+                mobileCate[ind].style.transform = 'scaleY(0)'
+            }
+        })
+    }
+    cateFunc(i);
+}

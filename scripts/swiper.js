@@ -13,9 +13,12 @@ const newSwiper = new Swiper('.new_swiper', {
         320:{
             slidesPerView:2,
         },
-        721:{
-            slidesPerView:4,
+        769:{
+            slidesPerView:3,
         },
+        1241:{
+            slidesPerView:4,
+        }
     }
 })
 const weekSwiper = new Swiper('.week_swiper', { 
@@ -26,6 +29,17 @@ const weekSwiper = new Swiper('.week_swiper', {
     pagination:{
         el:'.week_swiper + .swiper-pagination',
         type:'progressbar',
+    },
+    breakpoints:{
+        320:{
+            slidesPerView:2,
+        },
+        769:{
+            slidesPerView:3,
+        },
+        1241:{
+            slidesPerView:5,
+        }
     }
 })
 const trandSwiper = new Swiper('.trand_swiper', { 
@@ -39,5 +53,16 @@ const trandSwiper = new Swiper('.trand_swiper', {
     navigation:{
         prevEl:'.trand_list .swiper-button-prev',
         nextEl:'.trand_list .swiper-button-next',
+    },
+    breakpoints:{
+        320:{
+            slidesPerView:1,
+        },
+        769:{
+            slidesPerView:2,
+        },
+        1241:{
+            slidesPerView:3,
+        }
     },
 })

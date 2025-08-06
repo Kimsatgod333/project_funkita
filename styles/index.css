@@ -19,6 +19,7 @@ main section h2 {
     font-size:2rem;
     font-weight:500;
     text-transform:uppercase;
+    text-wrap:nowrap;
     margin-bottom:50px;
 }
 main #new_arrival {
@@ -27,7 +28,32 @@ main #new_arrival {
     align-items:center;
     position:relative;
 }
+main #new_arrival .title_wrap {
+    display:flex;
+    flex-flow:row nowrap;
+}
 main #new_arrival h2 {}
+main #new_arrival .mobile_cate {
+    display:none;
+    margin-left:25px;
+}
+main #new_arrival .mobile_cate a {
+    height:24px;
+    display:flex;
+    align-items:center;
+}
+main #new_arrival .mobile_cate a span {}
+main #new_arrival .mobile_cate a img {
+    transform:rotate(180deg);
+    transition:all 0.3s;
+}
+main #new_arrival .mobile_cate .mobile_cate_btn {
+    display:flex;
+    flex-flow:column nowrap;
+    transform-origin:center top;
+    transform:scaleY(0);
+    transition:all 0.3s;
+}
 main #new_arrival .new_list {}
 main #new_arrival .new_list .cate_btn {
     justify-content:center;
@@ -36,11 +62,16 @@ main #new_arrival .new_list .cate_btn {
 main #new_arrival .new_list .cate_btn li {}
 main #new_arrival .new_list .cate_btn li a {}
 main #new_arrival .new_swiper {
-    max-width:980px;
-    min-width:320px;
+    width:100%;
 }
-main #new_arrival .new_swiper .swiper-wrapper {}
-main #new_arrival .new_swiper .swiper-wrapper .swiper-slide {}
+main #new_arrival .new_swiper .swiper-wrapper {
+    width:100%;
+    max-width:1164px;
+}
+main #new_arrival .new_swiper .swiper-wrapper .swiper-slide {
+    width:200px;
+    height:314px;
+}
 main #new_arrival .new_swiper .swiper-wrapper .swiper-slide a {
     display:flex;
     flex-flow:column;
@@ -76,6 +107,30 @@ main #new_arrival .new_swiper ~ .swiper-button-next {
 main #weekly_best {
     height:100vh;
     padding:120px 0;
+}
+main #weekly_best .title_wrap {
+    display:flex;
+}
+main #weekly_best .mobile_cate {
+    display:none;
+    margin-left:25px;
+}
+main #weekly_best .mobile_cate a {
+    height:24px;
+    display:flex;
+    align-items:center;
+}
+main #weekly_best .mobile_cate a span {}
+main #weekly_best .mobile_cate a img {
+    transform:rotate(180deg);
+    transition:all 0.3s;
+}
+main #weekly_best .mobile_cate .mobile_cate_btn {
+    display:flex;
+    flex-flow:column nowrap;
+    transform-origin:center top;
+    transform:scaleY(0);
+    transition:all 0.3s;
 }
 main #weekly_best h2 {
     padding-left:240px;
@@ -311,7 +366,78 @@ a {cursor: pointer;}
     main .bnr_swiper {
         height:max-content;
     }
+    main section {
+        padding:120px 30px;
+    }
+    main #new_arrival .new_swiper + .swiper-button-prev {
+        display:none;
+    }
+    main #new_arrival .new_swiper ~ .swiper-button-next {
+        display:none;
+    }
+    main #weekly_best h2 {
+        padding-left:30px;
+    }
+    main #weekly_best .week_list .cate_btn {
+        padding-left:30px;
+    }
+    main #weekly_best .week_list .week_swiper + .swiper-pagination {
+        display:none;
+    }
+    main #trand h2 {
+        padding-left:30px;
+    }
+    main #news .news_list ul li:nth-child(2) {
+        display:none;
+    }
 }
 @media screen and (max-width:768px) {
-    
+    main section {
+        padding:120px 15px;
+    }
+    main section h2 {
+        font-size:1.5rem;
+    }
+    main #new_arrival .mobile_cate {
+        display:block;
+        margin-left:25px;
+    }
+    main #weekly_best h2 {
+        padding-left:15px;
+    }
+    main #weekly_best .mobile_cate {
+        display:block;
+        margin-left:25px;
+    }
+    main #weekly_best .week_list .cate_btn {
+        padding-left:15px;
+    }
+    main #weekly_best .week_list .week_swiper .swiper-wrapper .swiper-slide {   
+        height:314px;
+    }
+    main #weekly_best .week_list .week_swiper .swiper-wrapper .swiper-slide a img {
+            height:220px;
+    }
+    main .middle_bnr {
+        display:none;
+    }
+    main #trand h2 {
+        padding-left:15px;
+    }
+    main #news .news_list ul li {}
+    main #news .news_list ul li img {
+        width:100%;
+    }
+    main #news .news_list ul li:nth-child(2) {
+        display:none;
+    }
+    main #news .news_list ul li:nth-child(3) {
+        display:none;
+    }
+    main #help {
+        display:none;
+    }
+    .cate_btn {
+        display:none;
+    }
 }
