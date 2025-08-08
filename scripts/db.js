@@ -4,7 +4,6 @@ const topBnr = [
     './images/top_bnr/top_bnr001.png',
     './images/top_bnr/top_bnr002.png',
 ]
-console.log(topBnr)
 const newArrivalsWoman = [
     {
         src:'./images/new/new001.png',

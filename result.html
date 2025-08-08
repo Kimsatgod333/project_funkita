@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>구매하기 | Funkita</title>
+    <title>검색결과 | Funky Trunks</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/result.css">
     <script src="./scripts/common.js" defer></script>
+    <script src="./scripts/result.js" defer></script>
 </head>
 <body>
     <header>
@@ -89,7 +91,16 @@
         </ul>
     </header>
     <main>
-        
+        <div class="result_wrap">
+            <p class="no_result">검색결과가 없습니다.</p>
+        </div>
+        <div class="search_wrap"></div>
+        <div class="search_area_wrap">
+            <form action="get" id="search_area">
+                <input type="text" placeholder="검색어를 입력해주세요 예) 여성 수영복">
+                <button type="button" class="result_search"><img src="./images/search.png" alt="검색"></button>
+            </form>
+        </div>
     </main>
     <footer>
         <div class="top">
